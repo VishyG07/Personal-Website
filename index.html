@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional CV Portfolio</title>
+    <title>Vishwaroop Galgali - Equity Research Analyst Portfolio</title>
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Explore my professional CV, project portfolio, skills matrix, and interactive career timeline. Open to freelance and full-time opportunities.">
-    <meta name="keywords" content="Portfolio, CV, Software Engineer, Full Stack Developer, Interactive Resume, Career Timeline">
-    <meta name="author" content="CV Owner">
+    <meta name="description" content="Professional portfolio of Vishwaroop Galgali, an NISM-certified Equity Research Analyst with sell-side experience at ICICI Securities. Profile highlights financial modeling, valuation, and capital markets research.">
+    <meta name="keywords" content="Vishwaroop Galgali, Equity Research Analyst, ICICI Securities, Financial Modeling, Stock Valuation, Capital Markets, Portfolio Management">
+    <meta name="author" content="Vishwaroop Galgali">
     
     <!-- Google Fonts: Outfit & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- CSS Stylesheet consolidated directly here -->
     <style>
-        /* Modern CSS Reset & Design System */
+        /* Modern Reset & Design System */
         *, *::before, *::after {
             box-sizing: border-box;
             margin: 0;
@@ -33,36 +32,35 @@
             --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             
-            /* Accent Colors (Shared) */
-            --color-primary: #8b5cf6;       /* Violet */
-            --color-primary-glow: rgba(139, 92, 246, 0.15);
-            --color-secondary: #06b6d4;     /* Cyan */
-            --color-secondary-glow: rgba(6, 182, 212, 0.15);
-            --color-accent-blue: #3b82f6;   /* Blue */
-            --color-accent-green: #10b981;  /* Emerald */
-            --color-accent-purple: #a855f7; /* Purple */
+            /* Accent Colors (Finance Growth Emerald / Deep Blue accents) */
+            --color-primary: #10b981;       /* Growth Emerald Green */
+            --color-primary-glow: rgba(16, 185, 129, 0.15);
+            --color-secondary: #3b82f6;     /* Capital Blue */
+            --color-secondary-glow: rgba(59, 130, 246, 0.15);
+            --color-accent-gold: #f59e0b;    /* Gold */
+            --color-accent-navy: #1e3a8a;
         }
 
         /* Dark Theme Variables (Default) */
         .dark-theme {
-            --bg-main: #0b0f19;
-            --bg-body-gradient: radial-gradient(circle at top, #0f172a 0%, #0b0f19 100%);
-            --bg-navbar: rgba(15, 23, 42, 0.7);
-            --bg-card: rgba(30, 41, 59, 0.4);
+            --bg-main: #080c14;
+            --bg-body-gradient: radial-gradient(circle at top, #0f1c2e 0%, #080c14 100%);
+            --bg-navbar: rgba(15, 28, 46, 0.7);
+            --bg-card: rgba(22, 38, 61, 0.4);
             --border-card: rgba(255, 255, 255, 0.08);
             --text-title: #f8fafc;
             --text-body: #94a3b8;
             --text-muted: #64748b;
-            --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-            --card-shadow-hover: 0 20px 40px -15px rgba(139, 92, 246, 0.25);
+            --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+            --card-shadow-hover: 0 20px 40px -15px rgba(16, 185, 129, 0.2);
             
             /* Timeline Tags */
             --tag-fulltime-bg: rgba(16, 185, 129, 0.15);
             --tag-fulltime-color: #34d399;
-            --tag-freelance-bg: rgba(168, 85, 247, 0.15);
-            --tag-freelance-color: #c084fc;
-            --tag-education-bg: rgba(59, 130, 246, 0.15);
-            --tag-education-color: #60a5fa;
+            --tag-internship-bg: rgba(59, 130, 246, 0.15);
+            --tag-internship-color: #60a5fa;
+            --tag-education-bg: rgba(245, 158, 11, 0.12);
+            --tag-education-color: #fbbf24;
         }
 
         /* Light Theme Variables */
@@ -70,26 +68,26 @@
             --bg-main: #f8fafc;
             --bg-body-gradient: radial-gradient(circle at top, #f1f5f9 0%, #f8fafc 100%);
             --bg-navbar: rgba(248, 250, 252, 0.8);
-            --bg-card: rgba(255, 255, 255, 0.7);
-            --border-card: rgba(15, 23, 42, 0.06);
+            --bg-card: rgba(255, 255, 255, 0.8);
+            --border-card: rgba(15, 23, 42, 0.08);
             --text-title: #0f172a;
             --text-body: #475569;
             --text-muted: #94a3b8;
             --card-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.05);
-            --card-shadow-hover: 0 20px 40px -15px rgba(124, 58, 237, 0.15);
+            --card-shadow-hover: 0 20px 40px -15px rgba(16, 185, 129, 0.12);
             
             /* Timeline Tags */
             --tag-fulltime-bg: rgba(16, 185, 129, 0.12);
             --tag-fulltime-color: #065f46;
-            --tag-freelance-bg: rgba(168, 85, 247, 0.12);
-            --tag-freelance-color: #581c87;
-            --tag-education-bg: rgba(59, 130, 246, 0.12);
-            --tag-education-color: #1e3a8a;
+            --tag-internship-bg: rgba(59, 130, 246, 0.12);
+            --tag-internship-color: #1e40af;
+            --tag-education-bg: rgba(217, 119, 6, 0.12);
+            --tag-education-color: #78350f;
             
-            --color-primary: #7c3aed;
-            --color-primary-glow: rgba(124, 58, 237, 0.12);
-            --color-secondary: #0891b2;
-            --color-secondary-glow: rgba(8, 145, 178, 0.12);
+            --color-primary: #059669;
+            --color-primary-glow: rgba(5, 150, 105, 0.12);
+            --color-secondary: #2563eb;
+            --color-secondary-glow: rgba(37, 99, 235, 0.12);
         }
 
         /* Base Elements */
@@ -109,7 +107,7 @@
             transition: background var(--transition-normal), color var(--transition-normal);
         }
 
-        /* Scrollbar styling */
+        /* Scrollbar */
         ::-webkit-scrollbar {
             width: 10px;
         }
@@ -185,12 +183,12 @@
             background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
             color: #ffffff;
             border: none;
-            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
             opacity: 0.95;
         }
 
@@ -223,9 +221,9 @@
             color: var(--tag-fulltime-color);
         }
 
-        .badge-freelance {
-            background: var(--tag-freelance-bg);
-            color: var(--tag-freelance-color);
+        .badge-internship {
+            background: var(--tag-internship-bg);
+            color: var(--tag-internship-color);
         }
 
         .badge-education {
@@ -334,7 +332,6 @@
             color: var(--color-primary);
         }
 
-        /* Toggle Sun/Moon Icon depending on theme */
         .sun-icon { display: none; }
         .moon-icon { display: block; }
         .light-theme .sun-icon { display: block; }
@@ -412,7 +409,7 @@
         .hero-badge {
             background: var(--color-primary-glow);
             color: var(--color-primary);
-            border: 1px solid rgba(139, 92, 246, 0.3);
+            border: 1px solid rgba(16, 185, 129, 0.3);
             padding: 0.4rem 1rem;
             border-radius: 30px;
             font-size: 0.8rem;
@@ -477,7 +474,7 @@
             transform: translateY(-2px);
         }
 
-        /* Avatar Showcase */
+        /* Avatar Frame */
         .avatar-frame {
             position: relative;
             width: 320px;
@@ -603,7 +600,7 @@
             background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
             color: #ffffff;
             border: none;
-            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.2);
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.2);
         }
 
         .timeline-wrapper {
@@ -730,7 +727,7 @@
             margin-bottom: 1.25rem;
         }
 
-        /* Accordion Collapse Logic */
+        /* Accordion Details */
         .details-collapse {
             display: grid;
             grid-template-rows: 0fr;
@@ -876,7 +873,7 @@
 
         .skill-bar {
             height: 100%;
-            width: 0; /* Animated dynamically by JS */
+            width: 0;
             background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
             border-radius: 3px;
             transition: width 1.2s cubic-bezier(0.1, 0.8, 0.2, 1);
@@ -1371,7 +1368,7 @@
                 <a href="#about" class="nav-link">About</a>
                 <a href="#experience" class="nav-link">Experience</a>
                 <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#projects" class="nav-link">Research</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
             <div class="nav-actions">
@@ -1396,34 +1393,31 @@
             </div>
             <div class="container hero-container">
                 <div class="hero-content">
-                    <span class="hero-badge animate-fade-in">Available for Work</span>
+                    <span class="hero-badge animate-fade-in">Open for Opportunities</span>
                     <h1 class="hero-title animate-slide-up">
-                        Hi, I'm <span class="text-gradient">Alex Morgan</span>
+                        Hi, I'm <span class="text-gradient">Vishwaroop Galgali</span>
                     </h1>
                     <h2 class="hero-subtitle animate-slide-up delay-1">
-                        Senior Full Stack & Software Engineer
+                        Equity Research Analyst
                     </h2>
                     <p class="hero-desc animate-slide-up delay-2">
-                        I design and build highly performant, accessible web applications and cloud integrations. Combining clean code with seamless user experiences is my specialty.
+                        NISM-certified Equity Research Analyst with sell-side experience at ICICI Securities. Specializing in financial modeling, equity valuation, and deep sector research.
                     </p>
                     <div class="hero-cta animate-slide-up delay-3">
                         <a href="#contact" class="btn btn-primary">
                             <span>Get In Touch</span>
                             <i data-lucide="arrow-right"></i>
                         </a>
-                        <a href="#" class="btn btn-outline" id="downloadCV">
-                            <i data-lucide="download"></i>
-                            <span>Download CV</span>
+                        <a href="#about" class="btn btn-outline">
+                            <i data-lucide="user"></i>
+                            <span>View Profile</span>
                         </a>
                     </div>
                     <div class="hero-socials animate-slide-up delay-4">
-                        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
-                            <i data-lucide="github"></i>
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/vishwaroopgalgali/" target="_blank" rel="noopener" aria-label="LinkedIn">
                             <i data-lucide="linkedin"></i>
                         </a>
-                        <a href="mailto:alex@example.com" aria-label="Email">
+                        <a href="mailto:vishwaroopg8@gmail.com" aria-label="Email">
                             <i data-lucide="mail"></i>
                         </a>
                     </div>
@@ -1449,24 +1443,24 @@
                 <div class="about-grid">
                     <div class="about-details">
                         <p class="about-lead">
-                            Passionate developer dedicated to engineering systems that are as beautiful on the inside as they are functional on the outside.
+                            NISM-certified Analyst with a strong foundation in capital markets, macroeconomic trends, and equity portfolios.
                         </p>
                         <p class="about-text">
-                            With over three years of experience writing clean, maintainable code, I have built modern web platforms ranging from customized client SaaS dashboards to e-commerce engines and full-stack cloud systems. I thrive in collaborative environments where performance, accessibility, and high-quality UI/UX are prioritized.
+                            I have professional experience working with the Retail Research Team at ICICI Securities and Transaction Banking Services at ICICI Bank. My skills cover building structured financial models from scratch, delivering Buy/Sell/Hold recommendations across small/mid-cap sectors (including road construction and building materials), and supporting lifecycle management of equity portfolios with up to ₹1,500 crore AUM. Proficient in Bloomberg, Capitaline, Advanced Excel, and Python.
                         </p>
                     </div>
                     <div class="about-stats">
                         <div class="stat-card">
-                            <span class="stat-num">3+</span>
-                            <span class="stat-label">Years Experience</span>
+                            <span class="stat-num">₹1.5k Cr</span>
+                            <span class="stat-label">Portfolio AUM Support</span>
                         </div>
                         <div class="stat-card">
-                            <span class="stat-num">15+</span>
-                            <span class="stat-label">Projects Completed</span>
+                            <span class="stat-num">35+</span>
+                            <span class="stat-label">Research Reports Published</span>
                         </div>
                         <div class="stat-card">
-                            <span class="stat-num">99%</span>
-                            <span class="stat-label">Uptime Delivered</span>
+                            <span class="stat-num">19</span>
+                            <span class="stat-label">Financial Models Tracked</span>
                         </div>
                     </div>
                 </div>
@@ -1477,7 +1471,7 @@
         <section id="experience" class="experience section reveal-on-scroll">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Career Timeline</h2>
+                    <h2 class="section-title">Professional Experience</h2>
                     <div class="section-line"></div>
                 </div>
                 
@@ -1485,7 +1479,7 @@
                 <div class="timeline-filters">
                     <button class="filter-btn active" data-category="All">All</button>
                     <button class="filter-btn" data-category="Full-Time">Full-Time</button>
-                    <button class="filter-btn" data-category="Freelance">Freelance</button>
+                    <button class="filter-btn" data-category="Internship">Internship</button>
                     <button class="filter-btn" data-category="Education">Education</button>
                 </div>
 
@@ -1501,22 +1495,24 @@
                             <div class="timeline-card">
                                 <div class="card-header">
                                     <div class="card-title-group">
-                                        <h3 class="role-title">Senior Software Engineer</h3>
-                                        <span class="company-name">Aura Technologies</span>
+                                        <h3 class="role-title">Equity Research Analyst</h3>
+                                        <span class="company-name">ICICI Securities (Retail Research Team)</span>
                                     </div>
                                     <div class="card-meta">
                                         <span class="badge badge-full-time">Full-Time</span>
-                                        <span class="duration-text"><i data-lucide="calendar"></i> Jan 2025 - Present</span>
+                                        <span class="duration-text"><i data-lucide="calendar"></i> May 2025 - June 2026</span>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p class="short-desc">Lead developer for cloud-based SaaS dashboard optimization and client portal redesign.</p>
+                                    <p class="short-desc">Research analyst focusing on small and mid-cap companies across road construction and building materials sectors.</p>
                                     <div class="details-collapse" id="details-exp_1">
                                         <div class="details-content">
                                             <ul>
-                                                <li>Designed and engineered responsive dashboard interface reducing load time by 35%.</li>
-                                                <li>Managed a team of 4 frontend engineers, implementing weekly code reviews and clean architecture practices.</li>
-                                                <li>Integrated third-party APIs (Stripe, HubSpot) to automate payment processing and lead capture.</li>
+                                                <li>Covered 12 BSE/NSE-listed small-cap companies; published 35+ research reports including initiating coverage on Greenlam Industries.</li>
+                                                <li>Valued companies using trading multiples and SOTP methods, delivering Buy/Sell/Hold recommendations to retail, HNI, UHNI, and family office clients.</li>
+                                                <li>Maintained 19 financial models tracking quarterly earnings, KPIs, and margin drivers; independently built 5+ models from scratch.</li>
+                                                <li>Monitored policy catalysts across MoRTH, NHAI, and Jal Jeevan Mission to assess order inflows and project pipelines.</li>
+                                                <li>Managed the end-to-end lifecycle of the 'OneClick Equity Portfolios' product supporting ~₹1,500 crore AUM (including stock selection, entry, rebalancing, and exit).</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1529,29 +1525,30 @@
                         </div>
 
                         <!-- Experience Card 2 -->
-                        <div class="timeline-item" data-category="Freelance">
+                        <div class="timeline-item" data-category="Internship">
                             <div class="timeline-marker">
                                 <div class="marker-dot"></div>
                             </div>
                             <div class="timeline-card">
                                 <div class="card-header">
                                     <div class="card-title-group">
-                                        <h3 class="role-title">Full Stack Developer</h3>
-                                        <span class="company-name">Freelance / Self-Employed</span>
+                                        <h3 class="role-title">Summer Intern</h3>
+                                        <span class="company-name">ICICI Bank (Transaction Banking Services)</span>
                                     </div>
                                     <div class="card-meta">
-                                        <span class="badge badge-freelance">Freelance</span>
-                                        <span class="duration-text"><i data-lucide="calendar"></i> Jun 2023 - Dec 2024</span>
+                                        <span class="badge badge-internship">Internship</span>
+                                        <span class="duration-text"><i data-lucide="calendar"></i> May - June 2024</span>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p class="short-desc">Built custom web applications, e-commerce stores, and corporate websites for global clients.</p>
+                                    <p class="short-desc">Banking requirements analysis and market scoping of Private Equity and Venture Capital firms.</p>
                                     <div class="details-collapse" id="details-exp_2">
                                         <div class="details-content">
                                             <ul>
-                                                <li>Built and deployed 10+ custom web apps using React, Node.js, and modern tools.</li>
-                                                <li>Consulted clients on SEO optimizations, increasing organic search traffic by average of 50%.</li>
-                                                <li>Developed custom inventory automation scripts saving clients roughly 10 hours of manual labor per week.</li>
+                                                <li>Researched the Indian PE/VC ecosystem across fund structures, operating models, and transaction banking needs. Mapped full value chains to identify key participants, regulatory considerations, and growth opportunities.</li>
+                                                <li>Tracked 46 newly registered AIFs (Alternate Investment Funds) and associated registrars using SEBI disclosures, building a structured database for market assessment.</li>
+                                                <li>Participated in onboarding discussions with 3 AIF registrars alongside the transaction banking team, gaining exposure to pitching and client onboarding processes.</li>
+                                                <li>Identified family offices (~$30B AUM in India) as an underpenetrated segment and recommended tailored transaction banking solutions as a growth lever.</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1564,29 +1561,28 @@
                         </div>
 
                         <!-- Experience Card 3 -->
-                        <div class="timeline-item" data-category="Full-Time">
+                        <div class="timeline-item" data-category="Education">
                             <div class="timeline-marker">
                                 <div class="marker-dot"></div>
                             </div>
                             <div class="timeline-card">
                                 <div class="card-header">
                                     <div class="card-title-group">
-                                        <h3 class="role-title">Software Developer Intern</h3>
-                                        <span class="company-name">PixelCraft Studios</span>
+                                        <h3 class="role-title">PGDM in Research & Business Analytics</h3>
+                                        <span class="company-name">Welingkar Institute of Management, Research & Development</span>
                                     </div>
                                     <div class="card-meta">
-                                        <span class="badge badge-full-time">Full-Time</span>
-                                        <span class="duration-text"><i data-lucide="calendar"></i> Sep 2022 - May 2023</span>
+                                        <span class="badge badge-education">Education</span>
+                                        <span class="duration-text"><i data-lucide="calendar"></i> 2023 - 2025</span>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p class="short-desc">Contributed to frontend feature development and automated testing for customer-facing applications.</p>
+                                    <p class="short-desc">Specialization in financial markets, statistical analytics, and business research. Graduated with CGPA: 8.06/10 in Mumbai.</p>
                                     <div class="details-collapse" id="details-exp_3">
                                         <div class="details-content">
                                             <ul>
-                                                <li>Refactored legacy UI components to modern modular design, improving site accessibility scores.</li>
-                                                <li>Wrote end-to-end integration tests using Cypress, cutting release bug rates by 15%.</li>
-                                                <li>Assisted in API design and database schema migrations using MongoDB.</li>
+                                                <li>Studied advanced statistics, predictive modeling, financial analysis, and database management.</li>
+                                                <li>Participated in various finance events, including the "Stock 'N' Roll Stock Pitch Challenge" (2023).</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1606,22 +1602,21 @@
                             <div class="timeline-card">
                                 <div class="card-header">
                                     <div class="card-title-group">
-                                        <h3 class="role-title">B.S. in Computer Science</h3>
-                                        <span class="company-name">Tech State University</span>
+                                        <h3 class="role-title">Bachelor of Commerce (B.Com)</h3>
+                                        <span class="company-name">Savitribai Phule Pune University</span>
                                     </div>
                                     <div class="card-meta">
                                         <span class="badge badge-education">Education</span>
-                                        <span class="duration-text"><i data-lucide="calendar"></i> 2019 - 2023</span>
+                                        <span class="duration-text"><i data-lucide="calendar"></i> 2019 - 2022</span>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p class="short-desc">Graduated with Honors. Specialization in Software Engineering and Database Systems.</p>
+                                    <p class="short-desc">Completed undergraduate studies with special focus on accounting, commercial laws, and banking. Graduated with CGPA: 8.42/10 in Pune.</p>
                                     <div class="details-collapse" id="details-exp_4">
                                         <div class="details-content">
                                             <ul>
-                                                <li>GPA: 3.8 / 4.0. Capstone Project: Built an AI-driven smart study planner app.</li>
-                                                <li>Peer tutor for Data Structures & Algorithms course for 3 semesters.</li>
-                                                <li>Active member of the University ACM Chapter and Robotics Club.</li>
+                                                <li>Core courses: Advanced Accounting, Corporate Finance, Business Economics, and Auditing.</li>
+                                                <li>Positions of Responsibility: Led a music band that performed at Firodia Karandak, an inter-college theatre competition.</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1641,29 +1636,29 @@
         <section id="skills" class="skills section reveal-on-scroll">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Skills & Technologies</h2>
+                    <h2 class="section-title">Skills & Tools</h2>
                     <div class="section-line"></div>
                 </div>
                 <div class="skills-grid">
-                    <!-- Frontend -->
+                    <!-- Tools -->
                     <div class="skills-category-card">
                         <div class="category-header">
-                            <i data-lucide="layout" class="cat-icon"></i>
-                            <h3>Frontend Development</h3>
+                            <i data-lucide="terminal" class="cat-icon"></i>
+                            <h3>Analytical Tools</h3>
                         </div>
                         <div class="skills-list">
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span class="skill-name">React & Next.js</span>
-                                    <span class="skill-percent">90%</span>
+                                    <span class="skill-name">Bloomberg Terminal</span>
+                                    <span class="skill-percent">85%</span>
                                 </div>
                                 <div class="skill-bar-container">
-                                    <div class="skill-bar" data-width="90%"></div>
+                                    <div class="skill-bar" data-width="85%"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span class="skill-name">JavaScript (ES6+)</span>
+                                    <span class="skill-name">Microsoft Excel (Advanced)</span>
                                     <span class="skill-percent">95%</span>
                                 </div>
                                 <div class="skill-bar-container">
@@ -1672,44 +1667,7 @@
                             </div>
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span class="skill-name">HTML5 & CSS3 / SCSS</span>
-                                    <span class="skill-percent">90%</span>
-                                </div>
-                                <div class="skill-bar-container">
-                                    <div class="skill-bar" data-width="90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">TailwindCSS</span>
-                                    <span class="skill-percent">85%</span>
-                                </div>
-                                <div class="skill-bar-container">
-                                    <div class="skill-bar" data-width="85%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Backend -->
-                    <div class="skills-category-card">
-                        <div class="category-header">
-                            <i data-lucide="database" class="cat-icon"></i>
-                            <h3>Backend & Database</h3>
-                        </div>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Node.js & Express</span>
-                                    <span class="skill-percent">85%</span>
-                                </div>
-                                <div class="skill-bar-container">
-                                    <div class="skill-bar" data-width="85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Python & Django</span>
+                                    <span class="skill-name">Capitaline</span>
                                     <span class="skill-percent">80%</span>
                                 </div>
                                 <div class="skill-bar-container">
@@ -1718,16 +1676,16 @@
                             </div>
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span class="skill-name">SQL (PostgreSQL/MySQL)</span>
-                                    <span class="skill-percent">80%</span>
+                                    <span class="skill-name">Power BI & PowerPoint</span>
+                                    <span class="skill-percent">85%</span>
                                 </div>
                                 <div class="skill-bar-container">
-                                    <div class="skill-bar" data-width="80%"></div>
+                                    <div class="skill-bar" data-width="85%"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span class="skill-name">MongoDB & Redis</span>
+                                    <span class="skill-name">Python (Data Analysis)</span>
                                     <span class="skill-percent">75%</span>
                                 </div>
                                 <div class="skill-bar-container">
@@ -1737,16 +1695,25 @@
                         </div>
                     </div>
 
-                    <!-- DevOps & Tools -->
+                    <!-- Core Competencies -->
                     <div class="skills-category-card">
                         <div class="category-header">
-                            <i data-lucide="cpu" class="cat-icon"></i>
-                            <h3>DevOps & Workflows</h3>
+                            <i data-lucide="trending-up" class="cat-icon"></i>
+                            <h3>Core Competencies</h3>
                         </div>
                         <div class="skills-list">
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span class="skill-name">Git & GitHub Actions</span>
+                                    <span class="skill-name">Financial Modelling & Forecasting</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Equity Valuation (Multiples, SOTP)</span>
                                     <span class="skill-percent">90%</span>
                                 </div>
                                 <div class="skill-bar-container">
@@ -1755,29 +1722,29 @@
                             </div>
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span class="skill-name">Docker</span>
-                                    <span class="skill-percent">75%</span>
+                                    <span class="skill-name">Comparable Company Analysis (CCA)</span>
+                                    <span class="skill-percent">90%</span>
                                 </div>
                                 <div class="skill-bar-container">
-                                    <div class="skill-bar" data-width="75%"></div>
+                                    <div class="skill-bar" data-width="90%"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span class="skill-name">Cloud Hosting (AWS, Vercel)</span>
-                                    <span class="skill-percent">80%</span>
+                                    <span class="skill-name">Financial Statement Analysis</span>
+                                    <span class="skill-percent">95%</span>
                                 </div>
                                 <div class="skill-bar-container">
-                                    <div class="skill-bar" data-width="80%"></div>
+                                    <div class="skill-bar" data-width="95%"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span class="skill-name">Workspaces & API Integration</span>
-                                    <span class="skill-percent">85%</span>
+                                    <span class="skill-name">Report Writing & Publishing</span>
+                                    <span class="skill-percent">90%</span>
                                 </div>
                                 <div class="skill-bar-container">
-                                    <div class="skill-bar" data-width="85%"></div>
+                                    <div class="skill-bar" data-width="90%"></div>
                                 </div>
                             </div>
                         </div>
@@ -1786,11 +1753,11 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Projects & Research Highlights Section -->
         <section id="projects" class="projects section reveal-on-scroll">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Featured Projects</h2>
+                    <h2 class="section-title">Research & Projects</h2>
                     <div class="section-line"></div>
                 </div>
                 <div class="projects-grid">
@@ -1798,25 +1765,14 @@
                     <div class="project-card">
                         <div class="project-content">
                             <div class="project-icon-wrapper">
-                                <i data-lucide="layers" class="project-icon"></i>
+                                <i data-lucide="briefcase" class="project-icon"></i>
                             </div>
-                            <h3 class="project-name">Aura SaaS Dashboard</h3>
-                            <p class="project-desc">A highly-optimized client portal and monitoring system equipped with real-time charting, payment gating via Stripe, and sub-second dashboards.</p>
+                            <h3 class="project-name">OneClick Equity Portfolios</h3>
+                            <p class="project-desc">Managed the end-to-end operational and analytical lifecycle of retail equity portfolios, supporting stock selection, tracking entry/exit points, and performing rebalancing, managing ~₹1,500 crore AUM.</p>
                             <div class="project-tags">
-                                <span>React</span>
-                                <span>TailwindCSS</span>
-                                <span>NodeJS</span>
-                                <span>Stripe</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com" target="_blank" rel="noopener" class="project-link" aria-label="GitHub Repository">
-                                    <i data-lucide="github"></i>
-                                    <span>Code</span>
-                                </a>
-                                <a href="#" class="project-link" aria-label="Live Demo">
-                                    <i data-lucide="external-link"></i>
-                                    <span>Demo</span>
-                                </a>
+                                <span>Portfolio Operations</span>
+                                <span>Stock Selection</span>
+                                <span>Rebalancing</span>
                             </div>
                         </div>
                     </div>
@@ -1825,25 +1781,14 @@
                     <div class="project-card">
                         <div class="project-content">
                             <div class="project-icon-wrapper">
-                                <i data-lucide="calendar-days" class="project-icon"></i>
+                                <i data-lucide="file-text" class="project-icon"></i>
                             </div>
-                            <h3 class="project-name">Smart Study Planner</h3>
-                            <p class="project-desc">An AI-driven dashboard that creates calendar events, analyzes study habits, and schedules customizable notifications to increase learning efficiency.</p>
+                            <h3 class="project-name">Greenlam Industries Coverage</h3>
+                            <p class="project-desc">Initiated complete research coverage on Greenlam Industries, publishing initiating coverage reports, mapping out road infrastructure/building material sector trends, and forecasting earnings.</p>
                             <div class="project-tags">
-                                <span>Python</span>
-                                <span>Django</span>
-                                <span>React</span>
-                                <span>PostgreSQL</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com" target="_blank" rel="noopener" class="project-link" aria-label="GitHub Repository">
-                                    <i data-lucide="github"></i>
-                                    <span>Code</span>
-                                </a>
-                                <a href="#" class="project-link" aria-label="Live Demo">
-                                    <i data-lucide="external-link"></i>
-                                    <span>Demo</span>
-                                </a>
+                                <span>Equity Research</span>
+                                <span>Earnings Models</span>
+                                <span>Initiating Coverage</span>
                             </div>
                         </div>
                     </div>
@@ -1851,28 +1796,68 @@
                     <!-- Project 3 -->
                     <div class="project-card">
                         <div class="project-content">
-                            <div class="project-content-inner" style="display: flex; flex-direction: column; height: 100%;">
-                                <div class="project-icon-wrapper">
-                                    <i data-lucide="settings-2" class="project-icon"></i>
+                            <div class="project-icon-wrapper">
+                                <i data-lucide="search" class="project-icon"></i>
+                            </div>
+                            <h3 class="project-name">PE/VC Transaction Banking Scoping</h3>
+                            <p class="project-desc">Summer internship project scoping the Indian PE/VC ecosystem. Tracked 46 newly registered AIFs and recommended tailored transaction banking solutions for family offices with ~$30B AUM in India.</p>
+                            <div class="project-tags">
+                                <span>Transaction Banking</span>
+                                <span>Alternative Funds</span>
+                                <span>PE/VC Scoping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Extra-Curriculars -->
+        <section id="certifications" class="skills section reveal-on-scroll" style="padding-top:0;">
+            <div class="container">
+                <div class="about-grid">
+                    <!-- Certifications -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <i data-lucide="award" class="cat-icon"></i>
+                            <h3>Professional Certifications</h3>
+                        </div>
+                        <div class="skills-list" style="gap:1rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:center;">
+                                <div>
+                                    <strong style="color:var(--text-title); font-size:1rem;">NISM-Series-XV: Research Analyst</strong>
+                                    <p style="font-size:0.85rem; color:var(--text-muted);">Certification Examination</p>
                                 </div>
-                                <h3 class="project-name">E-Commerce Automation</h3>
-                                <p class="project-desc">Automated inventory synchronization script and notification bot built to connect external marketplaces with a centralized warehouse portal.</p>
-                                <div class="project-tags" style="margin-top: auto;">
-                                    <span>NodeJS</span>
-                                    <span>Express</span>
-                                    <span>MongoDB</span>
-                                    <span>APIs</span>
-                                </div>
-                                <div class="project-links" style="margin-top: 1.75rem;">
-                                    <a href="https://github.com" target="_blank" rel="noopener" class="project-link" aria-label="GitHub Repository">
-                                        <i data-lucide="github"></i>
-                                        <span>Code</span>
-                                    </a>
-                                    <a href="#" class="project-link" aria-label="Live Demo">
-                                        <i data-lucide="external-link"></i>
-                                        <span>Demo</span>
-                                    </a>
-                                </div>
+                                <span style="font-size:0.8rem; font-weight:600; color:var(--color-primary);">July 2025 - July 2028</span>
+                            </div>
+                            <hr style="border:0; border-top:1px solid var(--border-card);">
+                            <div>
+                                <strong style="color:var(--text-title); font-size:1rem;">Bloomberg Finance Fundamentals (BFF)</strong>
+                                <p style="font-size:0.85rem; color:var(--text-muted);">Bloomberg L.P.</p>
+                            </div>
+                            <hr style="border:0; border-top:1px solid var(--border-card);">
+                            <div>
+                                <strong style="color:var(--text-title); font-size:1rem;">Bloomberg Market Concepts (BMC)</strong>
+                                <p style="font-size:0.85rem; color:var(--text-muted);">Bloomberg L.P.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Positions of Responsibility -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <i data-lucide="users" class="cat-icon"></i>
+                            <h3>Extracurriculars</h3>
+                        </div>
+                        <div class="skills-list" style="gap:1rem;">
+                            <div>
+                                <strong style="color:var(--text-title); font-size:1rem;">Volunteer</strong>
+                                <p style="font-size:0.9rem; margin-top:0.25rem;">Ploggers Community, Pune (Environmental social work volunteer).</p>
+                            </div>
+                            <hr style="border:0; border-top:1px solid var(--border-card);">
+                            <div>
+                                <strong style="color:var(--text-title); font-size:1rem;">Music Band Lead</strong>
+                                <p style="font-size:0.9rem; margin-top:0.25rem;">Led a music band that performed at Firodia Karandak, a prominent inter-college theatre and cultural competition.</p>
                             </div>
                         </div>
                     </div>
@@ -1889,8 +1874,8 @@
                 </div>
                 <div class="contact-grid">
                     <div class="contact-info-panel">
-                        <h3>Let's collaborate on something amazing</h3>
-                        <p class="contact-intro">Whether you have a full-time role, a freelance project, or just want to say hi, feel free to reach out using the form or direct links.</p>
+                        <h3>Let's connect for analysis or research</h3>
+                        <p class="contact-intro">Feel free to reach out if you'd like to collaborate, discuss macroeconomic trends, or have a relevant opportunity.</p>
                         
                         <div class="info-list">
                             <div class="info-item">
@@ -1899,7 +1884,16 @@
                                 </div>
                                 <div class="info-text">
                                     <span class="info-label">Email Me</span>
-                                    <a href="mailto:alex@example.com" class="info-val">alex@example.com</a>
+                                    <a href="mailto:vishwaroopg8@gmail.com" class="info-val">vishwaroopg8@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span class="info-label">Call Me</span>
+                                    <a href="tel:+918793908537" class="info-val">+91 879390 8537</a>
                                 </div>
                             </div>
                             <div class="info-item">
@@ -1908,16 +1902,7 @@
                                 </div>
                                 <div class="info-text">
                                     <span class="info-label">Location</span>
-                                    <span class="info-val">San Francisco, CA</span>
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <i data-lucide="briefcase"></i>
-                                </div>
-                                <div class="info-text">
-                                    <span class="info-label">Availability</span>
-                                    <span class="info-val">Open for new projects</span>
+                                    <span class="info-val">Mumbai, India</span>
                                 </div>
                             </div>
                         </div>
@@ -1939,12 +1924,12 @@
                             </div>
                             <div class="form-group">
                                 <label for="formSubject">Subject</label>
-                                <input type="text" id="formSubject" name="subject" required placeholder="Project discussion">
+                                <input type="text" id="formSubject" name="subject" required placeholder="Equity research collaboration">
                                 <span class="form-error" id="subjectError">Subject is required</span>
                             </div>
                             <div class="form-group">
                                 <label for="formMessage">Message</label>
-                                <textarea id="formMessage" name="message" rows="5" required placeholder="Hi Alex, I'd like to work with you on..."></textarea>
+                                <textarea id="formMessage" name="message" rows="5" required placeholder="Hi Vishwaroop, I would like to discuss..."></textarea>
                                 <span class="form-error" id="messageError">Message cannot be empty</span>
                             </div>
                             <button type="submit" class="btn btn-primary btn-submit">
@@ -1953,7 +1938,7 @@
                             </button>
                             <div id="formSuccess" class="form-feedback success">
                                 <i data-lucide="check-circle-2"></i>
-                                <span>Your message was sent successfully! I will reach out soon.</span>
+                                <span>Your message was sent successfully! I will get back to you soon.</span>
                             </div>
                         </form>
                     </div>
@@ -1965,13 +1950,13 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-container">
-            <p class="copyright">&copy; 2026 Alex Morgan. All rights reserved.</p>
+            <p class="copyright">&copy; 2026 Vishwaroop Galgali. All rights reserved.</p>
             <div class="footer-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
+                <a href="#projects">Research</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
@@ -1980,15 +1965,12 @@
     <!-- Lucide Icons Library -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
-    <!-- JavaScript logic consolidated directly here -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Initialize Lucide icons
             if (typeof lucide !== 'undefined') {
                 lucide.createIcons();
             }
             
-            // Run page logic
             initTheme();
             initMobileMenu();
             initTimelineFilters();
@@ -1998,7 +1980,7 @@
             generateAvatarSVG();
         });
 
-        /* 1. Theme Toggle Management */
+        /* 1. Theme Toggle System */
         function initTheme() {
             const themeToggle = document.getElementById('themeToggle');
             if (!themeToggle) return;
@@ -2056,7 +2038,6 @@
                 });
             });
 
-            // Sync menu focus active states with scrolling location
             const sections = document.querySelectorAll('section');
             window.addEventListener('scroll', () => {
                 let current = '';
@@ -2076,7 +2057,7 @@
             });
         }
 
-        /* 3. Career Timeline Filter Handling */
+        /* 3. Career Timeline Filter Logic */
         function initTimelineFilters() {
             const filterButtons = document.querySelectorAll('.filter-btn');
             const timelineItems = document.querySelectorAll('.timeline-item');
@@ -2247,58 +2228,87 @@
             });
         }
 
-        /* 7. Inline SVG Professional Character Loader */
+        /* 7. Inline SVG Custom Finance/Equity Analyst Illustration */
         function generateAvatarSVG() {
             const avatarContainer = document.getElementById('avatarContainer');
             if (!avatarContainer) return;
 
             const svgAvatar = `
-            <svg width="100%" height="100%" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block; background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);">
+            <svg width="100%" height="100%" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block; background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(59, 130, 246, 0.08) 100%);">
                 <circle cx="100" cy="100" r="85" stroke="rgba(255, 255, 255, 0.05)" stroke-width="2" stroke-dasharray="4 4" />
-                <circle cx="100" cy="100" r="65" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
                 
-                <g opacity="0.6">
-                    <circle cx="60" cy="50" r="6" fill="#8b5cf6" opacity="0.4" />
-                    <circle cx="145" cy="80" r="10" fill="#06b6d4" opacity="0.3" />
-                    <path d="M120 40 L125 45 L120 50 L115 45 Z" fill="#3b82f6" opacity="0.5" />
-                </g>
-
-                <g transform="translate(10, 10)">
+                <!-- Stock Rising Chart Line Background -->
+                <path d="M 20 160 Q 60 140, 90 90 T 150 110 T 180 50" stroke="#10b981" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4" />
+                <path d="M 20 160 Q 60 140, 90 90 T 150 110 T 180 50 L 180 180 L 20 180 Z" fill="url(#chartFillGrad)" opacity="0.1" />
+                
+                <!-- Analytical Grid Circles -->
+                <circle cx="90" cy="90" r="3" fill="#10b981" />
+                <circle cx="150" cy="110" r="3" fill="#10b981" />
+                <circle cx="180" cy="50" r="4" fill="#10b981" />
+                
+                <g transform="translate(10, 15)">
+                    <!-- Head & Professional Hair -->
                     <path d="M90 62 C90 42, 110 42, 110 62 C110 65, 108 72, 100 72 C92 72, 90 65, 90 62 Z" fill="#64748b" />
-                    <path d="M88 56 C88 40, 112 40, 112 56 C105 48, 95 48, 88 56 Z" fill="#475569" />
+                    <path d="M88 56 C88 38, 112 38, 112 56 C105 48, 95 48, 88 56 Z" fill="#334155" />
+                    
+                    <!-- Neck -->
                     <rect x="97" y="68" width="6" height="10" fill="#94a3b8" />
                     
-                    <path d="M70 100 C70 82, 82 78, 100 78 C118 78, 130 82, 130 100 L130 140 L70 140 Z" fill="url(#jacketGrad)" />
-                    <path d="M90 78 L100 92 L110 78 Z" fill="#475569" />
-                    <path d="M94 78 L100 86 L106 78 Z" fill="#f8fafc" />
+                    <!-- Corporate Suit / Jacket & Tie -->
+                    <path d="M70 100 C70 82, 82 78, 100 78 C118 78, 130 82, 130 100 L130 140 L70 140 Z" fill="url(#suitGrad)" />
+                    <!-- White shirt V-neck -->
+                    <path d="M93 78 L100 92 L107 78 Z" fill="#f8fafc" />
+                    <!-- Green Tie -->
+                    <path d="M98 84 L102 84 L103 105 L100 110 L97 105 Z" fill="#10b981" />
+                    <!-- Suit Lapels -->
+                    <path d="M76 80 L92 98 L88 120 Z" fill="#1e293b" />
+                    <path d="M124 80 L108 98 L112 120 Z" fill="#1e293b" />
 
-                    <rect x="92" y="52" width="7" height="5" rx="1.5" stroke="#3b82f6" stroke-width="1.5" fill="rgba(59, 130, 246, 0.2)" />
-                    <rect x="101" y="52" width="7" height="5" rx="1.5" stroke="#3b82f6" stroke-width="1.5" fill="rgba(59, 130, 246, 0.2)" />
+                    <!-- Glasses -->
+                    <rect x="91" y="52" width="8" height="5" rx="1" stroke="#3b82f6" stroke-width="1.5" fill="rgba(59, 130, 246, 0.2)" />
+                    <rect x="101" y="52" width="8" height="5" rx="1" stroke="#3b82f6" stroke-width="1.5" fill="rgba(59, 130, 246, 0.2)" />
                     <line x1="99" y1="54" x2="101" y2="54" stroke="#3b82f6" stroke-width="1.5" />
-                    <line x1="89" y1="54" x2="92" y2="54" stroke="#3b82f6" stroke-width="1" />
-                    <line x1="108" y1="54" x2="111" y2="54" stroke="#3b82f6" stroke-width="1" />
+                </g>
 
-                    <g transform="translate(65, 110)">
-                        <path d="M5 25 L65 25 L60 40 L10 40 Z" fill="#334155" />
-                        <path d="M10 25 L60 25 L58 5 L12 5 Z" fill="#1e293b" stroke="#475569" stroke-width="1" />
-                        <polygon points="12,5 58,5 65,25 5,25" fill="url(#screenGlow)" opacity="0.15" />
-                        <line x1="18" y1="9" x2="35" y2="9" stroke="#8b5cf6" stroke-width="1.5" stroke-linecap="round" />
-                        <line x1="18" y1="13" x2="45" y2="13" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" />
-                        <line x1="22" y1="17" x2="38" y2="17" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" />
-                        <line x1="18" y1="21" x2="28" y2="21" stroke="#a855f7" stroke-width="1.5" stroke-linecap="round" />
-                        <line x1="20" y1="30" x2="50" y2="30" stroke="#475569" stroke-width="1" stroke-dasharray="1 1" />
-                        <rect x="31" y="33" width="8" height="4" rx="0.5" fill="#475569" />
-                    </g>
+                <!-- Foreground Analyst Bloomberg Monitor Screen -->
+                <g transform="translate(60, 125)">
+                    <!-- Laptop Bezel -->
+                    <rect x="0" y="5" width="80" height="42" rx="3" fill="#1e293b" stroke="#334155" stroke-width="2" />
+                    <!-- Screen Area -->
+                    <rect x="4" y="9" width="72" height="34" rx="1" fill="#020617" />
+                    
+                    <!-- Chart / Stocks on screen -->
+                    <!-- Green candlestick bars -->
+                    <rect x="10" y="25" width="4" height="12" fill="#10b981" />
+                    <line x1="12" y1="21" x2="12" y2="38" stroke="#10b981" stroke-width="1" />
+                    
+                    <rect x="20" y="20" width="4" height="10" fill="#10b981" />
+                    <line x1="22" y1="16" x2="22" y2="32" stroke="#10b981" stroke-width="1" />
+                    
+                    <rect x="30" y="28" width="4" height="6" fill="#ef4444" />
+                    <line x1="32" y1="25" x2="32" y2="36" stroke="#ef4444" stroke-width="1" />
+                    
+                    <rect x="40" y="15" width="4" height="15" fill="#10b981" />
+                    <line x1="42" y1="10" x2="42" y2="33" stroke="#10b981" stroke-width="1" />
+                    
+                    <!-- Bloomberg Market Line -->
+                    <path d="M 12 25 L 22 22 L 32 30 L 42 16 L 52 14 L 68 18" stroke="#3b82f6" stroke-width="1.5" fill="none" stroke-linecap="round" />
+                    <circle cx="68" cy="18" r="2" fill="#3b82f6" />
+                    
+                    <!-- Numbers / Grid details -->
+                    <rect x="52" y="25" width="18" height="3" rx="0.5" fill="#1e293b" />
+                    <rect x="52" y="30" width="12" height="3" rx="0.5" fill="#1e293b" />
+                    <rect x="52" y="35" width="15" height="2" rx="0.5" fill="#10b981" opacity="0.7" />
                 </g>
                 
                 <defs>
-                    <linearGradient id="jacketGrad" x1="70" y1="78" x2="130" y2="140" gradientUnits="userSpaceOnUse">
-                        <stop offset="0%" stop-color="#1e293b" />
+                    <linearGradient id="suitGrad" x1="70" y1="78" x2="130" y2="140" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#334155" />
                         <stop offset="100%" stop-color="#0f172a" />
                     </linearGradient>
-                    <linearGradient id="screenGlow" x1="35" y1="5" x2="35" y2="25" gradientUnits="userSpaceOnUse">
-                        <stop offset="0%" stop-color="#06b6d4" />
-                        <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+                    <linearGradient id="chartFillGrad" x1="100" y1="50" x2="100" y2="180" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#10b981" />
+                        <stop offset="100%" stop-color="#080c14" stop-opacity="0" />
                     </linearGradient>
                 </defs>
             </svg>

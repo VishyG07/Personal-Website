@@ -1911,7 +1911,7 @@
                     </div>
                     
                     <div class="contact-form-wrapper">
-                        <form id="contactForm" novalidate>
+                        <form id="contactForm" name="contact" data-netlify="true" novalidate>
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="formName">Full Name</label>
@@ -2210,7 +2210,16 @@
                         if (btnText) btnText.textContent = 'Sending...';
                     }
 
-                    setTimeout(() => {
+                    // Netlify Form Submission via AJAX (fetch)
+                    const formData = new FormData(form);
+                    formData.append('form-name', 'contact');
+
+                    fetch("/", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                        body: new URLSearchParams(formData).toString()
+                    })
+                    .then(() => {
                         if (submitBtn) {
                             submitBtn.disabled = false;
                             const btnText = submitBtn.querySelector('span');
@@ -2225,7 +2234,16 @@
                                 successFeedback.style.display = 'none';
                             }, 5000);
                         }
-                    }, 1500);
+                    })
+                    .catch(error => {
+                        console.error('Netlify Form submission error:', error);
+                        alert('Oops! Something went wrong while sending your message. Please try again.');
+                        if (submitBtn) {
+                            submitBtn.disabled = false;
+                            const btnText = submitBtn.querySelector('span');
+                            if (btnText) btnText.textContent = 'Send Message';
+                        }
+                    });
                 }
             });
         }

@@ -510,6 +510,13 @@
             backdrop-filter: blur(12px);
         }
 
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
         /* About Section */
         .about-grid {
             display: grid;
@@ -1426,7 +1433,7 @@
                     <div class="avatar-frame animate-float">
                         <div class="avatar-glow"></div>
                         <div class="avatar-container" id="avatarContainer">
-                            <!-- SVG Avatar placeholder, loaded by JS -->
+                            <img src="profile.png" alt="Vishwaroop Galgali" class="profile-img">
                         </div>
                     </div>
                 </div>
@@ -1944,7 +1951,6 @@
             initAccordions();
             initScrollAnimations();
             initContactForm();
-            generateAvatarSVG();
         });
 
         /* 1. Theme Toggle System */
